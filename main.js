@@ -18,5 +18,5 @@ const personajesSimpsons = [
 { nombre: "Martin", edad: 10, rol: "Compañero de clase" }
 ];
 
-//(Me creo la variable personajesMenores xq lo necesito para los otros ejs.)
+//(Me creo la variable personajesMenores-ahora->filtroMenores18 xq lo necesito para los otros ejs.)
 const filtroMenores18 = personajesSimpsons.filter(personajesSimpsons => personajesSimpsons.edad < 18); //RTA = Un arreglo de 7 personajes.
