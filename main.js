@@ -19,4 +19,4 @@ const personajesSimpsons = [
 ];
 
 //(Me creo la variable personajesMenores xq lo necesito para los otros ejs.)
-const personajesMenores = personajesSimpsons.filter(personajesSimpsons => personajesSimpsons.edad < 18); //RTA = Un arreglo de 7 personajes.
+const filtroMenores18 = personajesSimpsons.filter(personajesSimpsons => personajesSimpsons.edad < 18); //RTA = Un arreglo de 7 personajes.
