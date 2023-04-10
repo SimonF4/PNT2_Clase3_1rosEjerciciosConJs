@@ -56,3 +56,26 @@ Array(7)
     5: "Nelson"
     6: "Martin"
 */
+
+/*
+Ejercicio 4: Cambiar el rol de los personajes
+Utilizar el método map y destructuring para crear un nuevo array a partir del array
+del Ejercicio 1, en el cual el rol de los personajes menores de edad sea cambiado a
+"Estudiante". Mostrar el nuevo array en la consola.
+*/
+
+//Recordar: Map = sirve para crear un NUEVO array pudiendo transformar los elementos.
+
+/* v1: no es lo q pedian. El array tiene q tener el objeto personaje.
+const mapRolEjs1 = filtroMenores18.map(personaje => personaje.rol);
+const cambioRolEjs1 = mapRolEjs1.map(rol => "Estudiante");
+console.log(cambioRolEjs1);
+RTA= Array(7)
+0: "Estudiante"
+1: "Estudiante"
+2: "Estudiante"
+3: "Estudiante"
+4: "Estudiante"
+5: "Estudiante"
+6: "Estudiante"
+*/
