@@ -79,3 +79,29 @@ RTA= Array(7)
 5: "Estudiante"
 6: "Estudiante"
 */
+
+/* opcion 2: const cambioRolEjs1 = filtroMenores18.map(personaje => personaje.rol = "Estudiante");
+console.log(cambioRolEjs1);*/
+
+/* opcion 3-iterando-: for (let i = 0; i < filtroMenores18.length; i++) {
+    const personajeActual = filtroMenores18[i];
+}*/
+
+/* opcion 4: const mapRolEjs1 = filtroMenores18.map(function(personaje){
+    return personaje.rol="Estudiante";
+});
+console.log(mapRolEjs1);*/
+/*RTA= Array(7)
+0: "Estudiante"
+1: "Estudiante"
+2: "Estudiante"
+3: "Estudiante"
+4: "Estudiante"
+5: "Estudiante"
+6: "Estudiante"*/
+
+// opcion 5:
+// IMPORTANTE: destructuring = en vez de poner el nombre del array-> poner los nombres a cada index del array (es para despues poder llamar a esos como variables).
+//ej: const {bart, lisa, maggie, ...rest} = mapRolEjs1
+const mapRolEjs1 = filtroMenores18.map(({ nombre, edad, rol }) => ({ nombre, edad, rol: "Estudiante" }));
+console.log(mapRolEjs1);
