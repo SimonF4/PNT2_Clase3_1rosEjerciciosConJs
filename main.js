@@ -27,9 +27,13 @@ Utilizar el método reduce para sumar las edades de todos los personajes del arr
 creado en el Ejercicio 1. Mostrar el resultado en la consola.
 */
 //ejemplo: numeros.reduce((acumulador, numero) => acumulador + numero, 0)
+
 //ejemploOficial: const sumWithInitial = array1.reduce(
     //(accumulator, currentValue) => accumulator + currentValue,
     //  initialValue
     //);
-const sumaEdadesEjs1 = filtroMenores18.reduce((acumulador, edad) => acumulador + edad, 0);
-console.log(sumaEdadesEjs1);
+
+//Ejemplo oficial q sirve: Grouping objects by a property
+
+const sumaEdadesEjs1 = filtroMenores18.reduce((acumulador, personaje) => acumulador + personaje.edad, 0);
+console.log(sumaEdadesEjs1); //RTA = 59
