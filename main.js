@@ -20,3 +20,16 @@ const personajesSimpsons = [
 
 //(Me creo la variable personajesMenores-ahora->filtroMenores18 xq lo necesito para los otros ejs.)
 const filtroMenores18 = personajesSimpsons.filter(personajesSimpsons => personajesSimpsons.edad < 18); //RTA = Un arreglo de 7 personajes.
+
+/*
+Ejercicio 2: Sumar edades de los personajes
+Utilizar el método reduce para sumar las edades de todos los personajes del array
+creado en el Ejercicio 1. Mostrar el resultado en la consola.
+*/
+//ejemplo: numeros.reduce((acumulador, numero) => acumulador + numero, 0)
+//ejemploOficial: const sumWithInitial = array1.reduce(
+    //(accumulator, currentValue) => accumulator + currentValue,
+    //  initialValue
+    //);
+const sumaEdadesEjs1 = filtroMenores18.reduce((acumulador, edad) => acumulador + edad, 0);
+console.log(sumaEdadesEjs1);
