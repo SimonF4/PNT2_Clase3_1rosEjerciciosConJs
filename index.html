@@ -35,15 +35,20 @@
 
         const filtroMenores18 = personajesSimpsons.filter(personajesSimpsons => personajesSimpsons.edad < 18);
         console.log(filtroMenores18);
-        //Ejs2:
 
-        //console.log(variable1);
+        //Ejs2:
+        const sumaEdadesEjs1 = filtroMenores18.reduce((acumulador, edad) => acumulador + edad, 0);
+        console.log(sumaEdadesEjs1);
+        //Resultado: 0[object Object][object Object][object Object][object Object][object Object][object Object][object Object]
+
         //Ejs3:
 
         //console.log(variable1);
+
         //Ejs4:
 
         //console.log(variable1);
+
         //Ejs5:
 
         //console.log(variable1);
