@@ -37,9 +37,10 @@
         console.log(filtroMenores18);
 
         //Ejs2:
-        const sumaEdadesEjs1 = filtroMenores18.reduce((acumulador, edad) => acumulador + edad, 0);
-        console.log(sumaEdadesEjs1);
+        //const sumaEdadesEjs1 = filtroMenores18.reduce((acumulador, edad) => acumulador + edad, 0);
         //Resultado: 0[object Object][object Object][object Object][object Object][object Object][object Object][object Object]
+        const sumaEdadesEjs1 = filtroMenores18.reduce((acumulador, personaje) => acumulador + personaje.edad, 0);
+        console.log(sumaEdadesEjs1);
 
         //Ejs3:
 
