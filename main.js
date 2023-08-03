@@ -105,3 +105,7 @@ console.log(mapRolEjs1);*/
 //ej: const {bart, lisa, maggie, ...rest} = mapRolEjs1
 const mapRolEjs1 = filtroMenores18.map(({ nombre, edad, rol }) => ({ nombre, edad, rol: "Estudiante" }));
 console.log(mapRolEjs1);
+
+/*
+
+*/
